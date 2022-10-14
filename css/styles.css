@@ -19,16 +19,59 @@ body {
   color: #212121;
   }
 
-ul {
+  h1,h2,h3,h4,h5,h6,p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+
+ul,
+ol {
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
 }
 
 .link {
   text-decoration: none;
 }
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
+}
 
 /* ===START HEADER=== */
 
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation {
+  display: flex;
+}
+.menu-list {
+  display: flex;
+  align-items: center;
+}
+.mail-tel {
+  display: flex;
+}
+.nav-link-item:not(:last-child) {
+  margin-right: 50px;
+}
+.contacts-mail-tel:not(:last-child) {
+  margin-right: 50px;
+}
 .logo {
   font-family: var(--secondary-font-family);
   font-weight: 700;
@@ -36,6 +79,7 @@ ul {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--logo-text-color);
+  margin-right: 92px;
 }
 .letter {
   color: var(--third-text-color);
