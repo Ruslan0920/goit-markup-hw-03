@@ -48,9 +48,18 @@ img {
   padding-right: 15px;
   outline: 2px solid tomato;
 }
-
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* ===START HEADER=== */
 
+.main-header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  outline: 2px solid teal;
+  background-color: rgb(154, 199, 199);
+}
 .header-container {
   display: flex;
   align-items: center;
@@ -120,8 +129,8 @@ img {
 
 /* ===START HERO=== */
 .visually-hidden {
-    position: fixed;
-    transform: scale(0);
+  position: fixed;
+  transform: scale(0);
 }
 .hero {
   width: 1600px;
@@ -140,6 +149,10 @@ img {
   color: var(--fourth-text-color);
 }
 .modal-btn {
+  box-sizing: border-box;
+  min-width: 216px;
+  /* min-height: 50px; */
+  padding: 10px 16px;
   font-family: var(--primary-font-family);
   font-weight: 700;
   font-size: 16px;
@@ -148,11 +161,14 @@ img {
   background-color: var(--third-bcg-color);
   color: var(--fourth-text-color);
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 .modal-btn:hover,
 .modal-btn:focus {
-    background-color: var(--fourth-bcg-color);
-    color: var(--fourth-text-color);
+  background-color: var(--fourth-bcg-color);
+  color: var(--fourth-text-color);
+  
 }
 /* ===END HERO=== */
 
@@ -185,11 +201,15 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  text-align: center;
+  margin-bottom: 50px;
 }
 /* ===END OUR WORK=== */
 
 /* ===START OUR TEAM=== */
-
+.team {
+  background-color: var(--second-bcg-color);
+}
 .team-name {
   font-family: var(--primary-font-family);
   font-weight: 500;
@@ -198,6 +218,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  margin-bottom: 10px;
 }
 .team-job-title {
   font-family: var(--primary-font-family);
@@ -207,6 +228,24 @@ img {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
+.team-items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.team-list {
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc((100%-120px)/4);
+}
+.team-content-wraper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 /* ===END OUR TEAM=== */
 
 /* ===START FOOTER=== */
