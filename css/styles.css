@@ -139,6 +139,10 @@ img {
   background: var(--first-bcg-color);
 }
 .main-title {
+  padding-top: 200px;
+  padding-left: 235px;
+  padding-right: 235px;
+  margin-bottom: 30px;
   font-family: var(--primary-font-family);
   font-size: 44px;
   font-weight: 900;
@@ -151,7 +155,6 @@ img {
 .modal-btn {
   box-sizing: border-box;
   min-width: 216px;
-  /* min-height: 50px; */
   padding: 10px 16px;
   font-family: var(--primary-font-family);
   font-weight: 700;
@@ -163,6 +166,8 @@ img {
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  margin-bottom: 200px;
+  
 }
 .modal-btn:hover,
 .modal-btn:focus {
@@ -173,6 +178,21 @@ img {
 /* ===END HERO=== */
 
 /* ===START FEATURES=== */
+
+.features-container {
+  display: flex;
+  
+}
+.festures-items {
+  display: flex;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.festures-list {
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc((100%-120px)/4);
+}
 
 .features-titles {
   font-family: var(--primary-font-family);
