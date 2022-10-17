@@ -147,6 +147,11 @@ img {
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: var(--fourth-text-color);
+  margin-bottom: 30px;
+  padding-top: 200px;
+  padding-left: 237px;
+  /* width: 696px; */
+
 }
 .modal-btn {
   box-sizing: border-box;
