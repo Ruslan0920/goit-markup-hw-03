@@ -63,9 +63,6 @@ img {
 .main-header {
   padding-top: 25px;
   padding-bottom: 25px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1600px;
   border-bottom: 1px solid #ececec;
 }
 .header-container {
@@ -141,9 +138,8 @@ img {
   transform: scale(0);
 }
 .hero {
-  padding-top: 195px;
+  padding-top: 200px;
   padding-bottom: 200px;
-  width: 1600px;
   text-align: center;
   background: var(--first-bcg-color);
 }
@@ -171,6 +167,7 @@ img {
   color: var(--fourth-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: transparent;
   cursor: pointer;
 }
 .modal-btn:hover,
@@ -188,14 +185,13 @@ img {
 .festures-items {
   display: flex;
   margin-left: -30px;
-  margin-top: -30px;
-}
+  }
 .festures-list {
   margin-left: 30px;
-  margin-top: 30px;
-  flex-basis: calc((100% - 120px) / 4);
+    flex-basis: calc((100% - 120px) / 4);
 }
 .features-titles {
+  margin-bottom: 10px;
   font-family: var(--primary-font-family);
   font-weight: 700;
   font-size: 14px;
@@ -214,7 +210,9 @@ img {
 /* ===END FEATURES=== */
 
 /* ===START OUR WORK=== */
-
+.work.section {
+  padding-top: 0;
+}
 .work-items {
   display: flex;
   justify-content: space-between;
@@ -282,16 +280,16 @@ img {
 /* ===END OUR TEAM=== */
 
 /* ===START FOOTER=== */
+
 .footer-block {
-  width: 1600px;
   background: var(--first-bcg-color);
 }
-.footer-items {
+.footer-content {
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 .logo-footer {
   display: inline-block;
-  padding-top: 60px;
   margin-bottom: 20px;
   font-family: var(--secondary-font-family);
   font-weight: 700;
@@ -325,7 +323,6 @@ img {
 /* ===PAGE PORTFOLIO=== */
 /* ===START PORTFOLIO=== */
 
-
 .btn-list {
   display: flex;
   justify-content: center;
@@ -343,8 +340,8 @@ img {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   background-color: var(--second-bcg-color);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 4px;
+  border: transparent;
   cursor: pointer;
 }
 .portfolio-btn:hover,
@@ -375,8 +372,8 @@ img {
   margin-bottom: 0;
 }
 .portfolio-content-wraper {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
   border: 1px solid #eeeeee;
